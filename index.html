@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gonear Travel — Premium Vehicle Selection</title>
+  <meta name="description" content="Experience premium travel with Gonear Travel, a Magnear Technology Ltd. company. Choose from our luxury fleet of cars, jeeps, travellers, and buses.">
+  
+  <!-- Inter Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Floating Header Navigation -->
+  <header class="main-header">
+    <div class="nav-container">
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation Menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      
+      <div class="logo">
+        <a href="#">Gonear Travel</a>
+      </div>
+      
+      <button class="btn-login" id="loginBtn">Login</button>
+    </div>
+  </header>
+
+  <!-- Side Navigation Overlay -->
+  <nav class="side-nav" id="sideNav">
+    <button class="close-menu" id="closeMenu" aria-label="Close Menu">&times;</button>
+    <ul class="nav-links">
+      <li><a href="#" class="nav-link-item">Home</a></li>
+      <li><a href="#" class="nav-link-item">Menu</a></li>
+      <li><a href="#" class="nav-link-item">Contact</a></li>
+      <li><a href="#" class="nav-link-item">About</a></li>
+    </ul>
+  </nav>
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- Hero Section -->
+  <main class="hero-section">
+    <div class="bg-glow"></div>
+    <div class="container">
+      <h1 class="hero-title">Choose your Vehicles</h1>
+      <p class="hero-subtitle">Select the perfect luxury vehicle for your upcoming journey. Crafted for ultimate comfort.</p>
+      
+      <!-- Vehicle Grid -->
+      <div class="vehicle-grid">
+        <!-- Card 1: Car -->
+        <div class="vehicle-card" tabindex="0">
+          <div class="card-glow"></div>
+          <div class="card-content">
+            <div class="vehicle-icon">
+              <!-- Premium minimalist SVG for Car -->
+              <svg viewBox="0 0 100 50" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M15 30h70M18 30l4-12h56l4 12M25 18l5-10h40l5 10" />
+                <circle cx="30" cy="30" r="6" />
+                <circle cx="70" cy="30" r="6" />
+              </svg>
+            </div>
+            <h2 class="vehicle-type">Car</h2>
+            <p class="vehicle-desc">Upto 7 passengers</p>
+            <div class="card-action">
+              <span>Select vehicle</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="arrow-icon"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Jeep -->
+        <div class="vehicle-card" tabindex="0">
+          <div class="card-glow"></div>
+          <div class="card-content">
+            <div class="vehicle-icon">
+              <!-- Premium minimalist SVG for Jeep -->
+              <svg viewBox="0 0 100 50" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M10 32h80M10 32v-8l12-10h44l14 10v8M35 14h20M10 24h80" />
+                <circle cx="28" cy="32" r="8" />
+                <circle cx="72" cy="32" r="8" />
+                <path d="M28 32h44" stroke-dasharray="2 2" />
+              </svg>
+            </div>
+            <h2 class="vehicle-type">Jeep</h2>
+            <p class="vehicle-desc">Recommend for Off road</p>
+            <div class="card-action">
+              <span>Select vehicle</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="arrow-icon"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Traveller -->
+        <div class="vehicle-card" tabindex="0">
+          <div class="card-glow"></div>
+          <div class="card-content">
+            <div class="vehicle-icon">
+              <!-- Premium minimalist SVG for Traveller -->
+              <svg viewBox="0 0 100 50" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M10 34h80M10 34V16l10-6h55l15 10v14M22 10v14M45 10v14M68 10v14" />
+                <circle cx="28" cy="34" r="7" />
+                <circle cx="72" cy="34" r="7" />
+              </svg>
+            </div>
+            <h2 class="vehicle-type">Traveller</h2>
+            <p class="vehicle-desc">Upto 22 passengers</p>
+            <div class="card-action">
+              <span>Select vehicle</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="arrow-icon"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4: Bus -->
+        <div class="vehicle-card" tabindex="0">
+          <div class="card-glow"></div>
+          <div class="card-content">
+            <div class="vehicle-icon">
+              <!-- Premium minimalist SVG for Bus -->
+              <svg viewBox="0 0 100 50" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M8 35h84M8 35V12h80l4 6v17M16 12v14M32 12v14M48 12v14M64 12v14M80 12v14" />
+                <circle cx="24" cy="35" r="7" />
+                <circle cx="76" cy="35" r="7" />
+              </svg>
+            </div>
+            <h2 class="vehicle-type">Bus</h2>
+            <p class="vehicle-desc">Bus upto 49 passenger</p>
+            <div class="card-action">
+              <span>Select vehicle</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="arrow-icon"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Login Modal -->
+  <div class="modal-backdrop" id="loginModal">
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose" aria-label="Close Modal">&times;</button>
+      <h2 class="modal-title">Sign in to Gonear</h2>
+      <p class="modal-subtitle">Enter your credentials to manage your trips.</p>
+      <form class="login-form" id="loginForm" onsubmit="event.preventDefault(); alert('Login simulated successfully!');">
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" required placeholder="name@domain.com">
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" required placeholder="••••••••">
+        </div>
+        <button type="submit" class="btn-submit">Continue</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="footer-container">
+      <h3 class="footer-heading">About Magnear Technology Ltd.</h3>
+      <p class="footer-subtext">Chairman and Founder : Jomon ST</p>
+      <p class="copyright">&copy; 2026 Gonear Travel. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="main.js"></script>
+</body>
+</html>
